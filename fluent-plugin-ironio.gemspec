@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["ctippur@gmail.com"]
   gem.summary       = %q{Fluentd input plugin for ironio alerts}
   gem.description   = %q{FLuentd plugin for ironio alerts... WIP}
-  gem.homepage      = 'https://github.com/Bigel0w/fluent-plugin-ironio'
+  gem.homepage      = 'https://github.com/ctippur/fluent-plugin-ironio'
   gem.license       = 'MIT'
 
   gem.files         = `git ls-files`.split($\)
@@ -19,8 +19,6 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency "rake", '~> 0.9', '>= 0.9.6'
   gem.add_runtime_dependency "fluentd", '~> 0.10', '>= 0.10.51'
+  gem.add_runtime_dependency "json", '~> 1.1', '>= 1.8.2'
   gem.add_runtime_dependency "iron_mq", '>= 5.0.1'
-  gem.add_runtime_dependency "htmlentities", '>= 4.3.3'
-  gem.add_runtime_dependency "daemons", '>= 0'
-  gem.add_runtime_dependency "cgi", '>= 0'
 end

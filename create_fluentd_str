@@ -154,7 +154,7 @@ module Fluent
 
 # Read  trap messages as events in to fluentd
   class NewRelicInput < Input
-    Fluent::Plugin.register_input('newrelic', self)
+    Fluent::Plugin.register_input('$plugin', self)
 
     # Define default configurations
     # Example: config_param :tag, :string, :default => "alert.newrelic"

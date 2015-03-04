@@ -22,7 +22,7 @@ unless ENV.has_key?('VERBOSE')
   $log = nulllogger
 end
 
-require 'fluent/plugin/in_newrelic'
+require 'fluent/plugin/in_ironio'
 
 class Test::Unit::TestCase
 end

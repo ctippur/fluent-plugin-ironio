@@ -1,11 +1,11 @@
 module Fluent
 
 # Read  trap messages as events in to fluentd
-  class NewRelicInput < Input
-    Fluent::Plugin.register_input('newrelic', self)
+  class IronioInput < Input
+    Fluent::Plugin.register_input('ironio', self)
 
     # Define default configurations
-    config_param :tag, :string, :default => "alert.newrelic"
+    config_param :tag, :string, :default => "alert.ironio"
     config_param :endpoint, :string, :default => "" # Optional
     config_param :projectId, :string, :default => ""
     config_param :token, :string, :default => ""
@@ -39,7 +39,7 @@ module Fluent
       timer_trigger = TimerWatcher.new(@interval, true, &method(:input))
       timer_trigger.attach(@loop)
       @thread = Thread.new(&method(:run))
-      $log.info "starting newrelic poller, interval #{@interval}"
+      $log.info "starting ironio poller, interval #{@interval}"
     end
 
     # Stop Listener and cleanup any open connections.
@@ -51,7 +51,7 @@ module Fluent
 
     def run
       @loop.run
-      $log.info "Running NewRelic Input"
+      $log.info "Running Ironio Input"
     end
 
     # Start SNMP Trap listener
