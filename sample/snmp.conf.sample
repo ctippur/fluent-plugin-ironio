@@ -1,0 +1,15 @@
+    <source>
+      type newrelic       # required, chossing the input plugin.
+      endpoint       # Optional. 
+      projectId # Needed for Ironio
+      token # Needed for Ironio
+      endpointQueue # Needed for Ironio
+      endpointType # Example ironio, kinesis
+      oauthId            # authorization key
+      interval            # frequency to pull data
+      readOnly # True or false. This is to control the deletion of message after it is read
+    </source>
+
+    <match alert.newrelic>
+      type stdout
+    </match>
