@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-ironio"
-  gem.version       = "0.0.1"
+  gem.version       = "0.0.2"
   gem.date          = '2015-01-30'
   gem.authors       = ["chandrashekar Tippur"]
   gem.email         = ["ctippur@gmail.com"]
@@ -20,5 +20,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency "rake", '~> 0.9', '>= 0.9.6'
   gem.add_runtime_dependency "fluentd", '~> 0.10', '>= 0.10.51'
   gem.add_runtime_dependency "json", '~> 1.1', '>= 1.8.2'
-  gem.add_runtime_dependency "iron_mq", '>= 5.0', '>= 5.8.1'
+  gem.add_runtime_dependency "iron_mq", '~> 5.0', '>= 5.0.1'
 end

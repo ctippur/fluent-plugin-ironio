@@ -86,7 +86,7 @@ module Fluent
 	#tag = @tag 
 	timestamp = Engine.now # Should be received_time_input
 
-	jsonhtmlencodedraw['received_time_input']=timestamp.to_s
+	jsonhtmlencodedraw['receive_time_input']=timestamp.to_s
 	jsonhtmlencodedraw['event_type']=@tag.to_s
 	jsonhtmlencodedraw['intermediary_source']=jsonhtmlencodedraw['alert_url']
 	#jsonhtmlencodedraw.each do |key, value|
