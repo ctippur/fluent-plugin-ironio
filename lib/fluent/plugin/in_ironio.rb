@@ -15,7 +15,6 @@ module Fluent
     config_param :interval, :string, :default => "5"
     config_param :readOnly, :string, :default => "true"
 
-    
 
     # Initialize and bring in dependencies
     def initialize

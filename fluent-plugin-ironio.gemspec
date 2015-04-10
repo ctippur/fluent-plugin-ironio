@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 
+
 Gem::Specification.new do |gem|
   gem.name          = "fluent-plugin-ironio"
   gem.version       = "0.0.3"
